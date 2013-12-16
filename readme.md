@@ -8,7 +8,7 @@ Built by [AndrewNeo](http://www.reddit.com/u/AndrewNeo) to post [Game Grumps](ht
 Usage
 -----
 
-It's set up to be run by a cronfile, probably every minute or so at most.
+It's set up to be run inside a screen, just run in a screen, detach and everything should be good. 
 
 Configuration
 -------------

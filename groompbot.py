@@ -7,6 +7,7 @@ import logging
 import json
 import praw
 import gdata.youtube.service
+import time
 
 # YouTube functions
 def getUserUploads(username):
@@ -174,7 +175,8 @@ def runBot():
     
     logging.info("Done!")
 
-if __name__ == "__main__":
+
+def main():
     logging.basicConfig()
 
     try:
@@ -185,3 +187,9 @@ if __name__ == "__main__":
         logging.exception("Uncaught exception.")
 
     logging.shutdown()
+
+if __name__ == "__main__":
+    while True:
+        main()
+        print("Checking videos...")
+        time.sleep(60)
